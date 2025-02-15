@@ -1,58 +1,111 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+    font-family: "Work Sans", serif;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 900px;
-    width: 100%;
-}
-
-.col {
-    width: 22%;
-    box-sizing: border-box;
-    margin-bottom: 20px;
+.gap-8 {
+    gap: 8px;
 }
 
 .card {
-    width: 100%;
-    height: 300px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
+    border: none !important;
+    background: #FFFFFF;
+    transition: all 400ms linear !important;
+    box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.card:hover {
-    transform: scale(1.05);
+.fc-grey {
+    color: #7B7B7B;
 }
 
-.card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+.pt-24 {
+    padding-top: 24px;
 }
 
-.card-content {
-    padding: 15px;
+.pt-12 {
+    padding-top: 12px;
 }
 
-.card-title {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.icons {
+    right: -50% !important;
+    position: absolute;
 }
 
-.card-description {
-    font-size: 14px;
-    color: #666;
+.card:hover .icons {
+    right: 0% !important;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.svg-container {
+    bottom: 75%;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #FFff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card .svg-container:hover,
+.card .svg-container-2:hover,
+.card .svg-container-3:hover,
+.card .svg-container-4:hover {
+    background-color: #FF5300;
+    box-shadow: 1px 7px 10px 0px #FF530080;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.card .svg-container:hover path,
+.card .svg-container-2:hover path,
+.card .svg-container-3:hover path,
+.card .svg-container-4:hover path {
+    fill: #FFff;
+    transition: all 300ms;
+}
+
+.svg-container-2 {
+    bottom: 63%;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #FFff;
+    margin-top: 5px;
+}
+
+.svg-container-3 {
+    margin-top: 5px;
+    bottom: 51%;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #FFff;
+    display: flex;
+    margin-top: 4px;
+}
+
+.svg-container-4 {
+    margin-top: 5px;
+    bottom: 39%;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #FFff;
+    margin-top: 4px;
+}
+
+.fs-sm {
+    font-size: 16px !important;
+}
+
+.fs-md {
+    font-size: 20px !important;
+}
+
+.lh-24 {
+    line-height: 24.72px;
 }
